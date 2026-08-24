@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Same Shape Three Ways</title>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.167.1/build/three.module.js"
+        }
+    }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: white;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="info">
+    <strong>Same Square Three Ways</strong><br>
+    Left: Two Triangles<br>
+    Center: Indexed Geometry<br>
+    Right: PlaneGeometry
+</div>
+
+<script type="module" src="./SameShape3Ways.js"></script>
+
+</body>
+</html>
